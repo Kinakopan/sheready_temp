@@ -66,6 +66,7 @@ export default function Community({
     width: "100%",
     height: "100%",
   };
+
   return (
     <SafeAreaView
       style={styles.sarearea}>
