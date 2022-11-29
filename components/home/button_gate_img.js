@@ -19,7 +19,6 @@ const MyImg = styled.Image`
 const MyBgImg = styled.ImageBackground`
   background-position: bottom;
   background-size: contain;
-  align-self: "flex-start";
   width: 100%;
   height: 200px;
 `;
@@ -50,7 +49,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   img: {
-    display: "block",
+ 
     width: "100%",
     height: "100%",
     fontSize: 13,
@@ -67,7 +66,6 @@ const styles = StyleSheet.create({
   },
   quote_ttl: {
     fontFamily: "Comfortaa",
-    fontWeight: 400,
     height: 14,
     fontSize: 14,
     flexWrap: "wrap",
@@ -75,7 +73,6 @@ const styles = StyleSheet.create({
   quote_txt: {
     marginTop: 5,
     fontFamily: "Leky",
-    fontWeight: 400,
     height: 100,
     fontSize: 14,
     width: 170,

@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
 
   btn_home: {
     backgroundColor: "#7A7571",
-    borderRadius: "50%",
+    borderRadius: 50,
     width: 70,
     height: 70,
     overflow: "visible",

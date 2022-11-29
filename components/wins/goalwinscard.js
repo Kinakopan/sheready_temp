@@ -17,8 +17,10 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     alignItems: "center",
-    borderRadius: 30,
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
     borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 30,
     elevation: 5,
     height: "auto",
     backgroundColor: "#ECD8D0",
@@ -63,9 +65,8 @@ const styles = StyleSheet.create({
 
   txt: {
     color: "#484644",
-    fontFamily: "Comfortaa",
+    fontFamily: "ComfortaaL",
     fontSize: 20,
-    fontWeight: 600,
     flexWrap: "wrap",
     width: "80%",
   },
@@ -105,7 +106,6 @@ export default function Goalwinscard(props) {
           <Text
             style={{
               color: "white",
-              fontWeight: "400",
               fontSize: 15,
               fontFamily: "Comfortaa",
             }}
