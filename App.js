@@ -4,15 +4,14 @@ import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useFonts } from "expo-font";
 import Community from "./screens/community";
-import Home from "./screens/home";
+import Home from "./screens/testhome";
 import Goal from "./screens/goal";
-import Wins from "./screens/wins";
+import Wins from "./screens/testwins";
 import Landing from "./screens/landing";
-import Setting from "./screens/setting";
-import Shop from "./screens/shop";
+import Setting from "./screens/test_setting";
 import Signup from "./screens/signup";
 import Login from "./screens/login";
-import Test from "./screens/test";
+
 
 const Stack = createNativeStackNavigator();
 
@@ -33,6 +32,7 @@ export default function App() {
   const [fontsLoaded] = useFonts({
     Leky: require("./assets/fonts/LekyCalgriaPersonalUse-ywJRd.ttf"),
     Comfortaa: require("./assets/fonts/Comfortaa-Regular.ttf"),
+    ComfortaaL: require("./assets/fonts/Comfortaa-Bold.ttf"),
     South: require("./assets/fonts/SouthEpic-Decorative.otf"),
   });
 
@@ -41,17 +41,16 @@ export default function App() {
   }
   return (
     <NavigationContainer theme={MyTheme}>
-      <Stack.Navigator initialRouteName="Test">
+      <Stack.Navigator initialRouteName="Home">
         <Stack.Screen
           name="Landing"
           component={Landing}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Home" component={Home} options={{title:" "}}/>
         <Stack.Screen name="Goals" component={Goal} />
         <Stack.Screen name="Wins" component={Wins} />
         <Stack.Screen name="Community" component={Community} />
-        <Stack.Screen name="Shop" component={Shop} />
         <Stack.Screen name="Setting" component={Setting} />
         <Stack.Screen
           name="Signup"
@@ -63,8 +62,6 @@ export default function App() {
           component={Login}
           options={{ headerShown: true }}
         />
-
-        <Stack.Screen name="Test" component={Test} />
       </Stack.Navigator>
     </NavigationContainer>
   );
