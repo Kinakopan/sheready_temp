@@ -25,7 +25,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function Signup({ navigation }) {
+export default function Signup({
+  navigation,
+  action,
+  }) {
   const [userName, onChangeUserName] = React.useState("");
   const [password, onChangePassword] = React.useState("");
   const [email, onChangeEmail] = React.useState("");

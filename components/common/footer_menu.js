@@ -89,7 +89,6 @@ const styles = StyleSheet.create({
 export default function Footer_Menu({
   navigation,
   action,
-
 }) {
   const { colors } = useTheme();
 
