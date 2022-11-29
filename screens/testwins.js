@@ -13,7 +13,7 @@ import { BlurView } from "expo-blur";
 import Goalwinscard from "../components/wins/goalwinscard.js";
 import Export_Selected from "../components/wins/export_selected.js";
 import Export_All from "../components/wins/export_all.js";
-import ProfWindow from "../components/common/prof_window.js";
+import Prof_Window from "../components/common/prof_window.js";
 import Footer_Menu from "../components/common/footer_menu.js";
 // import { Colors } from "react-native/Libraries/NewAppScreen";
 import { useTheme } from "@react-navigation/native";
@@ -243,7 +243,7 @@ export default function Test({ navigation }) {
   return (
     <Provider>
       <Portal>
-        <ProfWindow nav={navigation} />
+        <Prof_Window nav={navigation} />
         <Wrapper>
           <Text
             style={{
@@ -378,7 +378,7 @@ export default function Test({ navigation }) {
                       >
                         <Image
                           style={styles.img_3}
-                          source={require("../assets/svg/instagram.svg")}
+                          source={require("../assets/svg/instagram.png")}
                         ></Image>
                         <Text style={styles.btnText}>Instagram</Text>
                       </TouchableOpacity>
@@ -388,7 +388,7 @@ export default function Test({ navigation }) {
                       >
                         <Image
                           style={styles.img_4}
-                          source={require("../assets/svg/message.svg")}
+                          source={require("../assets/svg/message.png")}
                         ></Image>
                         <Text style={styles.btnText}>Message</Text>
                       </TouchableOpacity> */}

@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { IconButton, Button } from "react-native-paper";
 import { useTheme } from "@react-navigation/native";
-// import ProfWindow from "../common/profile.js";
+// import Prof_Window from "../common/prof_window.js";
 
 const styles = StyleSheet.create({
   doorCont: {

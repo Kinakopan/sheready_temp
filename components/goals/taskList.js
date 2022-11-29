@@ -84,7 +84,7 @@ export default function TaskList(props) {
 
         <View style={styles.progressBox}>
           <ProgressBar
-            style={{ width: "60vw", left: 5, height: 6, borderRadius: 20, backgroundColor: "white" }}
+            style={{ width: "60%", left: 5, height: 6, borderRadius: 20, backgroundColor: "white" }}
             progress={props.progressNum}
             color="#484644"
           />

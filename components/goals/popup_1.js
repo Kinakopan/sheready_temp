@@ -137,7 +137,7 @@ const PopUp1 = ({ action }) => {
           <View style={{flexDirection: "row", justifyContent: "space-around", alignContent: "center", marginVertical: 30, marginHorizontal: 60}}>
             <TouchableOpacity onPress={()=>adjustCount(-1)}>
                <Image
-                source={require("../../assets/Goal/minus.png")}
+                source={require("../../assets/SC_Goals/icon_minus.png")}
                 style={{width: 30, height: 30, }}
               />
             </TouchableOpacity>
@@ -149,7 +149,7 @@ const PopUp1 = ({ action }) => {
 
             <TouchableOpacity onPress={()=>adjustCount(1)}>
                <Image
-                source={require("../../assets/Goal/plus.png")}
+                source={require("../../assets/SC_Goals/icon_plus.png")}
                 style={{width: 30, height: 30, }}
               />
             </TouchableOpacity>
