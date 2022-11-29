@@ -430,7 +430,7 @@ export default function TaskPopup({ action }) {
               </View>
             </View>
 
-            <Text style={[styles.txtNormal, {fontFamily: "ComfortaaL", marginBottom: 5, marginTop: 20, fontSize: 20}]}>Pick Existing Goal</Text>
+            <Text style={[styles.txtNormal, { marginBottom: 5, marginTop: 20, fontSize: 20}]}>Pick Existing Goal</Text>
             <View style={[
                 styles.existing_cont
               ]}>
@@ -490,7 +490,7 @@ export default function TaskPopup({ action }) {
                     fontSize: 16,
                   }}
                   >
-                  <Text style={{ fontWeight: "bold", fontSize: 20 }}>Task</Text>{" "}
+                  <Text style={{ fontSize: 20 }}>Task</Text>{" "}
                   <Text style={{ color: "#808080", fontSize: 20}}>
                     {" "}
                     ( required )
@@ -570,8 +570,8 @@ export default function TaskPopup({ action }) {
                     fontSize: 16,
                   }}
                   >
-                  <Text style={{ fontWeight: "bold" }}>Deadline</Text>{" "}
-                  <Text style={{ color: "#000000", opacity: "70%" }}>(optional)</Text>
+                  <Text style={{ fontSize: 20 }}>Deadline</Text>{" "}
+                  <Text style={{ color: "#808080", fontSize: 20 }}>( optional )</Text>
                 </Text>
                 <View
                   style={{
@@ -773,23 +773,22 @@ export default function TaskPopup({ action }) {
                     fontSize: 16,
                   }}
                 >
-                  <Text Text style={{ fontWeight: "bold" }}>
+                  <Text Text style={{ fontSize: 20 }}>
                     Repeat
                   </Text>{" "}
                 </Text>
                 <Text
                   style={{
-                    color: "#000000",
-                    opacity: "70%",
+                    color: "#808080",
                     fontFamily: "Comfortaa",
-                    fontSize: 16,
+                    fontSize: 20,
                   }}
                 >
-                  (required)
+                  ( required )
                   <Text
                     style={{
                       color: "red",
-                      fontSize: 12,
+                      fontSize: 20,
                       paddingTop: -2,
                       position: "relative",
                       top: -3,
