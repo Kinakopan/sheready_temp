@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     flexDirection: "column",
-    justifyContent: "flex-start",
+
   },
 
   textL: {

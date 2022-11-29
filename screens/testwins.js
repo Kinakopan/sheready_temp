@@ -55,7 +55,6 @@ const styles = StyleSheet.create({
   //   fontSize: "80%",
   //   textAlign: "center",
   //   fontFamily: "Comfortaa",
-  //   fontWeight: "bold",
   // },
 
   // texton: {
@@ -64,7 +63,6 @@ const styles = StyleSheet.create({
   //   fontSize: "80%",
   //   textAlign: "center",
   //   fontFamily: "Comfortaa",
-  //   fontWeight: "bold",
   // },
 
   scroll: {
@@ -112,9 +110,8 @@ const styles = StyleSheet.create({
   },
 
   exportText_1: {
-    fontFamily: "Comfortaa",
+    fontFamily: "ComfortaaL",
     fontSize: 14,
-    fontWeight: 600,
     display: "flex",
     alignItems: "flex-end",
     textAlign: "center",
@@ -163,7 +160,6 @@ const styles = StyleSheet.create({
   btnText: {
     fontFamily: "Comfortaa",
     fontStyle: "normal",
-    fontWeight: 400,
     fontSize: 16,
     lineHeight: 16,
     display: "flex",

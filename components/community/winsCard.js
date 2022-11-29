@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   img: {
     width: 45,
     height: 45,
-    resizeMode: "scale",
+    resizeMode: "cover",
     marginRight: 10,
     marginTop: 10,
     borderRadius: 100
@@ -65,7 +65,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
     flexWrap: "wrap",
-    alignSelf: "flex-start",
     fontFamily: "Leky",
   },
 
@@ -74,7 +73,6 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: "500",
     left: 0,
-    alignSelf: "flex-start",
     fontFamily: "Comfortaa",
   },
 

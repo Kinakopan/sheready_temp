@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: "center",
     fontFamily: "Comfortaa",
-    fontWeight: "bold",
     marginTop: 20,
   },
 
@@ -86,7 +85,6 @@ const styles = StyleSheet.create({
     color: "#484644",
     fontFamily: "Comfortaa",
     fontSize: 16,
-    fontWeight: 600,
   },
 
   //Repeat section CSS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -235,7 +233,6 @@ const styles = StyleSheet.create({
   example: {
     color: "#484644",
     fontSize: 14,
-    fontWeight: "400",
     marginVertical: 5,
     marginHorizontal: 10
   },

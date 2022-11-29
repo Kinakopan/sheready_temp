@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   btnTxt: {
-    lineHeight: "inherit",
     justifyContent: "center",
     fontSize: 12,
     fontFamily: "Comfortaa",
