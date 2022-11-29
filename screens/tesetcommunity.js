@@ -3,7 +3,7 @@ import { Text, View, SafeAreaView, Button, StyleSheet } from "react-native";
 import { Modal } from "react-native-paper";
 import TaskPopup from "../components/home/taskPop";
 import WinsCard from "../components/community/winsCard";
-import Button_Gate from "../components/home/button_gate.js";
+import Button_Gate from "../components/home/button_gate_img.js";
 
 const styles = StyleSheet.create({
     homecont: {
