@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   })
 
 
-export default function Test() {
+export default function Setting() {
 
   const containerStyle = {
     width: "100%",

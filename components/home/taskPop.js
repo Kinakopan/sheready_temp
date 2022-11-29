@@ -243,7 +243,6 @@ const styles = StyleSheet.create({
   exampleCont: {
     backgroundColor: "#ECD8D0",
     borderRadius: 15,
-    width: "100%",
     marginVertical: 5,
     marginRight: 10,
   },
@@ -408,7 +407,7 @@ export default function TaskPopup({ action }) {
                 styles.step1_picker_enterGoal,
               ]}>
               <TextInput
-                style={{fontSize: 16}}
+                style={{fontSize: 20, fontFamily: "Comfortaa"}}
                 placeholder="Enter your goal"
                 placeholderTextColor="rgba(72, 70, 68, 0.7)"
                 onChangeText={onGoal}
@@ -431,7 +430,7 @@ export default function TaskPopup({ action }) {
               </View>
             </View>
 
-            <Text style={[styles.txtNormal, {fontWeight: "bold", marginBottom: 5, marginTop: 20}]}>Pick Existing Goal</Text>
+            <Text style={[styles.txtNormal, { marginBottom: 5, marginTop: 20, fontSize: 20}]}>Pick Existing Goal</Text>
             <View style={[
                 styles.existing_cont
               ]}>
@@ -463,11 +462,6 @@ export default function TaskPopup({ action }) {
                   label="Time management skills"
                   value="Time"
                 />
-                <Picker.Item
-                  style={styles.step1_pickerItem}
-                  label="Add more.."
-                  value="Add"
-                />
               </Picker>
             </View>
           </View>
@@ -496,14 +490,14 @@ export default function TaskPopup({ action }) {
                     fontSize: 16,
                   }}
                   >
-                  <Text style={{ fontWeight: "bold" }}>Task</Text>{" "}
-                  <Text style={{ color: "#000000", opacity: "70%"}}>
+                  <Text style={{ fontSize: 20 }}>Task</Text>{" "}
+                  <Text style={{ color: "#808080", fontSize: 20}}>
                     {" "}
-                    (required)
+                    ( required )
                     <Text
                       style={{
                         color: "red",
-                        fontSize: 12,
+                        fontSize: 20,
                         paddingTop: -2,
                         position: "relative",
                         top: -3,
@@ -576,8 +570,8 @@ export default function TaskPopup({ action }) {
                     fontSize: 16,
                   }}
                   >
-                  <Text style={{ fontWeight: "bold" }}>Deadline</Text>{" "}
-                  <Text style={{ color: "#000000", opacity: "70%" }}>(optional)</Text>
+                  <Text style={{ fontSize: 20 }}>Deadline</Text>{" "}
+                  <Text style={{ color: "#808080", fontSize: 20 }}>( optional )</Text>
                 </Text>
                 <View
                   style={{
@@ -779,23 +773,22 @@ export default function TaskPopup({ action }) {
                     fontSize: 16,
                   }}
                 >
-                  <Text Text style={{ fontWeight: "bold" }}>
+                  <Text Text style={{ fontSize: 20 }}>
                     Repeat
                   </Text>{" "}
                 </Text>
                 <Text
                   style={{
-                    color: "#000000",
-                    opacity: "70%",
+                    color: "#808080",
                     fontFamily: "Comfortaa",
-                    fontSize: 16,
+                    fontSize: 20,
                   }}
                 >
-                  (required)
+                  ( required )
                   <Text
                     style={{
                       color: "red",
-                      fontSize: 12,
+                      fontSize: 20,
                       paddingTop: -2,
                       position: "relative",
                       top: -3,
@@ -914,27 +907,26 @@ export default function TaskPopup({ action }) {
                     fontSize: 16,
                   }}
                 >
-                  <Text style={{ fontWeight: "bold" }}>Notification</Text>
+                  <Text style={{ fontFamily: "ComfortaaL", fontSize: 20 }}>Notification</Text>
                 </Text>
                 <Text
                   style={{
-                    color: "#000000",
-                    opacity: "70%",
+                    color: "#808080",
                     fontFamily: "Comfortaa",
-                    fontSize: 16,
+                    fontSize: 20,
                   }}
                 >
                   {" "}
-                  (required
+                  ( required
                   <Text
                     style={{
                       color: "red",
-                      fontSize: 12,
+                      fontSize: 20,
                       position: "relative",
                       top: -3,
                     }}
                   >
-                    *
+                    *{" "}
                   </Text>
                   )
                 </Text>
@@ -953,13 +945,15 @@ export default function TaskPopup({ action }) {
                   thumbColor={enabled ? thumbColorOn : thumbColorOff}
                   trackColor={{ false: trackColorOff, true: trackColorOn }}
                   ios_backgroundColor={trackColorOff}
-                  style={{ marginRight: 5 }}
+                  style={{ marginRight: 5, margin: 10 }}
                 />
                 <Text
                   style={{
                     color: "#484644",
-                    fontFamily: "Comfortaa",
+                    fontFamily: "ComfortaaL",
                     fontSize: 16,
+                    alignSelf: "center",
+                    marginHorizontal: 5,
                   }}
                 >
                   {enabled ? "ON" : "OFF"}
@@ -987,10 +981,10 @@ export default function TaskPopup({ action }) {
                     fontSize: 16,
                   }}
                 >
-                  <Text Text style={{ fontWeight: "bold" }}>
+                  <Text Text style={{ fontFamily: "ComfortaaL", fontSize: 20 }}>
                     Time Setting
                   </Text>{" "}
-                  <Text style={{ color: "#000000", opacity: "70%"}}>(optional)</Text>
+                  <Text style={{ color: "#808080", fontSize: 20}}>( optional )</Text>
                 </Text>
                 <View
                   style={{
@@ -1000,7 +994,7 @@ export default function TaskPopup({ action }) {
                     // padding: "0.1em",
                   }}
                 >
-                  <View style={{ flex: 0.4 }}>
+                  <View style={{ flex: 0.45 }}>
                     <Picker
                       style={[styles.picker, {
                         backgroundColor: "transparent",
@@ -1069,7 +1063,7 @@ export default function TaskPopup({ action }) {
                     </Picker>
                   </View>
 
-                  <View style={{ flex: 0.4 }}>
+                  <View style={{ flex: 0.45 }}>
                     <Picker
                       style={[styles.picker, {
                         backgroundColor: "transparent",
@@ -1112,14 +1106,20 @@ export default function TaskPopup({ action }) {
       <View style={styles.buttoncont}>
       <TouchableOpacity>
 
-        {/* {setpnum === 0 && (
+        {setpnum === 0 && (
+          <View style={{flexDirection: "row"}}>
+          <Button style={styles.btn} onPress={onNext} textColor="black" labelStyle={styles.buttontxt}> Next</Button>
+          </View>
+        )}
+
+        { setpnum === 1 && (
           <View style={{flexDirection: "row"}}>
           <Button style={styles.btn} onPress={onBack} textColor="black" labelStyle={styles.buttontxt}>Back</Button>
           <Button style={styles.btn} onPress={onNext} textColor="black" labelStyle={styles.buttontxt}> Next</Button>
           </View>
-        )} */}
+        )}
 
-        {setpnum < 3 && (
+        { setpnum === 2 && (
           <View style={{flexDirection: "row"}}>
           <Button style={styles.btn} onPress={onBack} textColor="black" labelStyle={styles.buttontxt}>Back</Button>
           <Button style={styles.btn} onPress={onNext} textColor="black" labelStyle={styles.buttontxt}> Next</Button>
@@ -1127,13 +1127,10 @@ export default function TaskPopup({ action }) {
         )}
 
         {setpnum === 3 && (
-          <Button
-            style={styles.btn}
-            onPress={action}
-            textColor="black"
-            labelStyle={styles.buttontxt}>
-              Done
-          </Button>
+          <View style={{flexDirection: "row"}}>
+          <Button style={styles.btn} onPress={onBack} textColor="black" labelStyle={styles.buttontxt}>Back</Button>
+          <Button style={styles.btn} onPress={action} textColor="black" labelStyle={styles.buttontxt}> Done</Button>
+          </View>
         )}
         </TouchableOpacity>
       </View>
