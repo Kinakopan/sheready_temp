@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useFonts } from "expo-font";
-import Community from "./screens/community";
+import Community from "./screens/tesetcommunity";
 import Home from "./screens/testhome";
 import Goal from "./screens/goal";
 import Wins from "./screens/testwins";
