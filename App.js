@@ -3,14 +3,14 @@ import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useFonts } from "expo-font";
-import Community from "./screens/tesetcommunity";
-import Home from "./screens/testhome";
-import Goal from "./screens/goal";
-import Wins from "./screens/testwins";
 import Landing from "./screens/landing";
-import Setting from "./screens/test_setting";
 import Signup from "./screens/signup";
 import Login from "./screens/login";
+import Community from "./screens/community";
+import Goal from "./screens/goal";
+import Home from "./screens/home";
+import Wins from "./screens/wins";
+import Setting from "./screens/setting";
 
 
 const Stack = createNativeStackNavigator();
@@ -47,7 +47,9 @@ export default function App() {
           component={Landing}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="Home" component={Home} options={{title:" "}}/>
+        <Stack.Screen name="Home" component={Home}
+          options={{title:" "}}
+        />
         <Stack.Screen name="Goals" component={Goal} />
         <Stack.Screen name="Wins" component={Wins} />
         <Stack.Screen name="Community" component={Community} />
