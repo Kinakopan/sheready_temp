@@ -56,7 +56,6 @@ export default function SettingPop({action}, props) {
       color: "#484644",
       fontFamily: "Comfortaa",
       fontSize: 16,
-      fontWeight: 600,
     }
 
 

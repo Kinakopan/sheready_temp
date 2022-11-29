@@ -321,7 +321,7 @@ export default function Test({
                 // sytle={{backgroundColor: "pink",width:200,height:100,zIndex:100,position:"absolute", top: 20, left: 200}}
               ></IconButton>
               <TaskPopup
-                action={changeCard}
+                action={hideModal}
                 style={{
                   position: "absolute",
                   bottom: 0,

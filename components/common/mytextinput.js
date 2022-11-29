@@ -36,7 +36,7 @@ const MyTextInput = (props) => {
         numberOfLines={props.numberOfLines}
         multiline={props.multiline}
         onSubmitEditing={props.onSubmitEditing}
-        autoComplete={"new-password"}
+        // autoComplete={"new-password"}
         autoFocus={false}
         style={{
           fontFamily: "Comfortaa",
